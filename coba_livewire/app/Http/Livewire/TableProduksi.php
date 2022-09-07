@@ -29,14 +29,14 @@ class TableProduksi extends Component
         $status = Item::groupBy('status')
                     ->pluck('status');
         $items = Item::query()
-                    ->when($this->searchColumnsKode != "", function($q){
-                        return $q->where('kode_barang', 'like', '%'.$this->searchColumnsKode.'%');})
-                    ->when($this->searchColumnsNama != "", function($q){
-                        return $q->where('nama_barang', 'like', '%'.$this->searchColumnsNama.'%');})
+                    // ->when($this->searchColumnsKode != "", function($q){
+                    //     return $q->where('kode_barang', 'like', '%'.$this->searchColumnsKode.'%');})
+                    // ->when($this->searchColumnsNama != "", function($q){
+                    //     return $q->where('nama_barang', 'like', '%'.$this->searchColumnsNama.'%');})
                     ->selectRaw('*, stock * harga as total_aset')
                     ->orderBy($this->sortBy, $this->sortDirection)
                     ->paginate();
-                    
+
         return view('livewire.table-produksi',[
             'title' => 'Produksi',
             'ket' => 'Tabel ',

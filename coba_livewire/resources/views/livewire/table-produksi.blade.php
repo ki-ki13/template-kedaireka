@@ -1,6 +1,7 @@
 @extends('layouts/main')
 
 @section('container')
+
 <div class="container-fluid flex-grow-1">
   <h3 class="my-4 judul"> {{ $title }} </h3>
   <div class="card border-light mb-3">
@@ -9,6 +10,7 @@
         <i class="material-icons-round bi me-2">{{ $icon }}</i>
         {{ $ket }}{{ $title }} 
       </h5>
+
 
 <table class="table">
   {{-- table heading --}}
@@ -54,7 +56,7 @@
         <th scope="col">Status</th>
       </tr>
       {{-- Search filter --}}
-      <tr class="align-center">
+      {{-- <tr class="align-center">
         <td></td>
         <td>
            <input type="text" class="form-control" wire:model="searchColumnsKode" style="width : 10rem"/>
@@ -110,7 +112,7 @@
                @endforeach
            </select>
         </td>
-     </tr>
+     </tr> --}}
     </thead>
     {{-- table body --}}
     <tbody>
