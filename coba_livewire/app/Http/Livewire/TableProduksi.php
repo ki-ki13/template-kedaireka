@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\Item;
+use Schema;
 
 
 class TableProduksi extends Component
@@ -26,6 +27,7 @@ class TableProduksi extends Component
 
     public function render()
     {
+        $columns = ['Kode Barang','Nama Barang'];
         $status = Item::groupBy('status')
                     ->pluck('status');
         $items = Item::query()
@@ -42,7 +44,8 @@ class TableProduksi extends Component
             'ket' => 'Tabel ',
             'items' => $items,
             'status' => $status,
-            'icon' => 'precision_manufacturing'
+            'icon' => 'precision_manufacturing',
+            'columns'=>$columns
         ]);
     }
 }

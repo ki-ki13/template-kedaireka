@@ -10,6 +10,24 @@
         {{ $ket }}{{ $title }} 
       </h5>
 
+      <div class="row my-4">
+        <span class="my-2 mx-2 fs-5" style="color: #5C5858"> 
+          Cari Berdasarkan
+        </span>
+        <div class="col-5">
+              <div class="input-group mx-2 mb-4">
+                <select class="selection form-select" id="itemType" name="item_type" aria-label=".form-select-sm example">
+                  <option value= "0">Choose Columns</option>
+                  @foreach ($columns as $columns_id => $columns_name)
+                   <option value="{{ $columns_id }}">{{ $columns_name }}</option>
+                  @endforeach
+                  
+                </select>
+                <input class="form-control" style="width:10rem" id="exampleInputEmail1" aria-describedby="emailHelp" name="search" placeholder="search..">
+              </div>
+        </div>
+      </div>
+
 <table class="table">
   {{-- table heading --}}
     <thead>
@@ -54,7 +72,7 @@
         <th scope="col">Status</th>
       </tr>
       {{-- Search filter --}}
-      <tr class="align-center">
+      {{-- <tr class="align-center">
         <td></td>
         <td>
            <input type="text" class="form-control" wire:model="searchColumnsKode" style="width : 10rem"/>
@@ -110,7 +128,7 @@
                @endforeach
            </select>
         </td>
-     </tr>
+     </tr> --}}
     </thead>
     {{-- table body --}}
     <tbody>

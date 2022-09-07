@@ -65,7 +65,7 @@
 .no-use{
     color: #B5CAEA;
 }
-.selection{
+.selection{ 
     color :#4891FF !important;
     border-color: #4891FF !important;
     width: 10rem !important;
