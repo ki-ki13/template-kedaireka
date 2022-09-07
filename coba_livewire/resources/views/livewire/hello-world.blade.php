@@ -1,0 +1,3 @@
+<div>
+    Coba {{ $data }}
+</div>
