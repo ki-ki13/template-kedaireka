@@ -1,5 +1,5 @@
 <div id="sidebar-open bg-light" class="s"> 
-    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light sidebar-item">
+    <div class="d-flex flex-column flex-shrink-0 p-3 sidebar-item">
         <a href="/home" class="d-flex align-items-center justify-content-center p-3 my-3 mx-3 text-decoration-none bg-primary rounded" id="logo">
             <i class="material-icons-round bi me-2 text-white">account_balance_wallet</i>
             <span class="fs-5 text-white text">QiuQiu</span>

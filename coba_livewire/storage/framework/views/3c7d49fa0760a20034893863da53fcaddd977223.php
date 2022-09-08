@@ -1,7 +1,6 @@
 
 
 <?php $__env->startSection('container'); ?>
-
 <div class="container-fluid flex-grow-1">
   <h3 class="my-4 judul"> <?php echo e($title); ?> </h3>
   <div class="card border-light mb-3">
@@ -11,6 +10,23 @@
         <?php echo e($ket); ?><?php echo e($title); ?> 
       </h5>
 
+      <div class="row my-4">
+        <span class="my-2 mx-2 fs-5" style="color: #5C5858"> 
+          Cari Berdasarkan
+        </span>
+        <div class="col-5">
+              <div class="input-group mx-2 mb-4">
+                <select class="selection form-select" id="itemType" name="item_type" aria-label=".form-select-sm example">
+                  <option value= "0">Choose Columns</option>
+                  <?php $__currentLoopData = $columns; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $columns_id => $columns_name): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                   <option value="<?php echo e($columns_id); ?>"><?php echo e($columns_name); ?></option>
+                  <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                  
+                </select>
+                <input class="form-control" style="width:10rem" id="exampleInputEmail1" aria-describedby="emailHelp" name="search" placeholder="search..">
+              </div>
+        </div>
+      </div>
 
 <table class="table">
   
