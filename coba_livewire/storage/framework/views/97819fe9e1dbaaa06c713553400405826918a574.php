@@ -6,20 +6,20 @@
           </a>
         <ul class="nav flex-column my-3">
           <li class="nav-item">
-            <a href="/tabel" class="d-flex nav-link p-3 align-items-center {{ Route::is('tabel') ? 'active' : '' }}" aria-current="page">
-              {{-- {{ ($title === 'Barang') ? 'active' : '' }} --}}
+            <a href="/tabel" class="d-flex nav-link p-3 align-items-center <?php echo e(Route::is('tabel') ? 'active' : ''); ?>" aria-current="page">
+              
               <i class="material-icons-round bi me-4">dashboard</i>
               <span class="text">tabel</span>
             </a>
           </li>
           <li>
-            <a href="/" class="d-flex nav-link p-3 align-items-center {{ Route::is('dashboard') ? 'active' : '' }}">
+            <a href="/" class="d-flex nav-link p-3 align-items-center <?php echo e(Route::is('dashboard') ? 'active' : ''); ?>">
             <i class="material-icons-round bi me-4">dashboard</i>
               <span class="text">Dashboard</span>
             </a>
           </li>
           <li>
-            <a href="/tipe" class="d-flex nav-link p-3 align-items-center {{ Route::is('tipe.index') ? 'active' : '' }}">
+            <a href="/tipe" class="d-flex nav-link p-3 align-items-center <?php echo e(Route::is('tipe.index') ? 'active' : ''); ?>">
               <i class="material-icons-round bi me-4">precision_manufacturing</i>
               <span class="text">Barang</span>
             </a>
@@ -27,3 +27,4 @@
         </ul>
       </div>
 </div>
+<?php /**PATH C:\xampp\htdocs\FINANCE\template-kedaireka\coba_livewire\resources\views\components\sidebar.blade.php ENDPATH**/ ?>

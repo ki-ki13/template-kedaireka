@@ -6,9 +6,9 @@
   <h3 class="my-4 judul"> {{ $title }} </h3>
   <div class="card border-light mb-3">
     <div class="card-body table-responsive">
-      <h5 class="my-4 mx-2"> 
+      <h5 class="my-4 mx-2">
         <i class="material-icons-round bi me-2">{{ $icon }}</i>
-        {{ $ket }}{{ $title }} 
+        {{ $ket }}{{ $title }}
       </h5>
 
 
@@ -21,19 +21,19 @@
           <span>
             Kode Barang
             <i wire:click="sortBy('kode_barang')" style="cursor: pointer" class="material-icons-round {{ $sortBy === 'kode_barang' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
-          </span> 
-        </th> 
+          </span>
+        </th>
         <th  scope="col" >
           <span>
             Nama Barang
             <i wire:click="sortBy('nama_barang')" style="cursor: pointer" class="material-icons-round {{ $sortBy === 'nama_barang' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
-          </span> 
-        </th>               
+          </span>
+        </th>
         <th  scope="col" >
           <span>
             Stock
             <i wire:click="sortBy('stock')" style="cursor: pointer" class="material-icons-round {{ $sortBy === 'stock' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
-          </span> 
+          </span>
         </th>
         <th  scope="col" >
           <span>
@@ -97,10 +97,10 @@
      <td>
       <div class="d-flex flex-column">
         <label>From</label>
-        <input type="date" class="form-date form-control d-inline mb-2"  
+        <input type="date" class="form-date form-control d-inline mb-2"
           wire:model="searchColumnsDateMin" />
         <label>to</label>
-        <input type="date" class="form-date form-control d-inline" 
+        <input type="date" class="form-date form-control d-inline"
          wire:model="searchColumnsDateMax" />
       </div>
    </td>
@@ -131,7 +131,7 @@
               </tr>
       @endforeach
     </tbody>
-  </table> 
+  </table>
   {{-- pagination   --}}
   {{ $items -> links() }}
 
