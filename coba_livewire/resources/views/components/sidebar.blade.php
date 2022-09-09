@@ -13,9 +13,21 @@
             </a>
           </li>
           <li>
-            <a href="/tipe" class="d-flex nav-link p-3 align-items-center {{ Route::is('tipe.index') ? 'active' : '' }}">
+            <a href="/produksi" class="d-flex nav-link p-3 align-items-center {{ Route::is('produksi') ? 'active' : '' }}">
               <i class="material-icons-round bi me-4">precision_manufacturing</i>
-              <span class="text">Barang</span>
+              <span class="text">Produksi</span>
+            </a>
+          </li>
+          <li>
+            <a href="/pengiriman" class="d-flex nav-link p-3 align-items-center {{ Route::is('pengiriman') ? 'active' : '' }}">
+              <i class="material-icons-round bi me-4">local_shipping</i>
+              <span class="text">Pengiriman</span>
+            </a>
+          </li>
+          <li>
+            <a href="/rekap-subkon" class="d-flex nav-link p-3 align-items-center">
+              <i class="material-icons-round bi me-4">groups</i>
+              <span class="text">Rekap Subkon</span>
             </a>
           </li>
         </ul>

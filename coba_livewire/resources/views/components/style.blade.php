@@ -11,7 +11,3 @@
     @livewireStyles
 </head>
 <body>
-    @livewire('table-produksi')
-    @livewireScripts
-</body>
-</html>

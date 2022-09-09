@@ -11,7 +11,7 @@
       </h5>
 
       <div class="row my-4">
-        <span class="my-2 mx-2 fs-5" style="color: #5C5858"> 
+        <span class="my-2 mx-2 fs-7" style="color: #5C5858"> 
           Cari Berdasarkan
         </span>
         <div class="col-5">

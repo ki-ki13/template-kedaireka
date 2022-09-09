@@ -4,4 +4,5 @@
         <span class="text-muted">&copy; 2022 Allure Alumunio, Unnes</span>
       </div>
     </footer>
-  </div><?php /**PATH D:\Kedaireka\Coba\coba_livewire\resources\views/components/footer.blade.php ENDPATH**/ ?>
+</div>
+<?php /**PATH D:\Kedaireka\Coba\coba_livewire\resources\views/components/footer.blade.php ENDPATH**/ ?>
