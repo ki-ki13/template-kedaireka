@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [2022-09-05 03:16:17] local.ERROR: Command "make:livewire" is not defined.
 
 Did you mean one of these?
@@ -69,10 +70,19 @@ Did you mean one of these?
 #1 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'compact(): Unde...', 'D:\\\\Kedaireka\\\\Co...', 12)
 #2 D:\\Kedaireka\\Coba\\coba_livewire\\app\\Http\\Livewire\\HelloWorld.php(12): compact('aja')
 #3 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Http\\Livewire\\HelloWorld->render()
+=======
+[2022-09-07 05:08:34] local.ERROR: filemtime(): stat failed for D:\Kedaireka\Coba\coba_livewire\.env {"exception":"[object] (ErrorException(code: 0): filemtime(): stat failed for D:\\Kedaireka\\Coba\\coba_livewire\\.env at D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\ServeCommand.php:100)
+[stacktrace]
+#0 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(259): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'filemtime(): st...', 'D:\\\\Kedaireka\\\\Co...', 100)
+#1 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'filemtime(): st...', 'D:\\\\Kedaireka\\\\Co...', 100)
+#2 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\ServeCommand.php(100): filemtime('D:\\\\Kedaireka\\\\Co...')
+#3 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Console\\ServeCommand->handle()
+>>>>>>> master
 #4 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
 #5 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
 #6 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
 #7 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+<<<<<<< HEAD
 #8 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\livewire\\livewire\\src\\Component.php(173): Illuminate\\Container\\Container->call(Array)
 #9 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\livewire\\livewire\\src\\LifecycleManager.php(131): Livewire\\Component->renderToView()
 #10 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\livewire\\livewire\\src\\LivewireManager.php(108): Livewire\\LifecycleManager->renderToView()
@@ -6479,4 +6489,83 @@ Did you mean this?
 #72 D:\\Kedaireka\\Coba\\coba_livewire\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #73 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('D:\\\\Kedaireka\\\\Co...')
 #74 {main}
+=======
+#8 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(139): Illuminate\\Container\\Container->call(Array)
+#9 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\symfony\\console\\Command\\Command.php(291): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(124): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#11 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\symfony\\console\\Application.php(1002): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\ServeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 D:\\Kedaireka\\Coba\\coba_livewire\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 {main}
+"} 
+[2022-09-07 05:08:34] local.ERROR: include(D:\Kedaireka\Coba\coba_livewire\vendor\composer/../filp/whoops/src/Whoops/Handler/Handler.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\composer/../filp/whoops/src/Whoops/Handler/Handler.php): Failed to open stream: No such file or directory at D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(259): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(D:\\\\Keda...', 'D:\\\\Kedaireka\\\\Co...', 571)
+#1 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(D:\\\\Keda...', 'D:\\\\Kedaireka\\\\Co...', 571)
+#2 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\composer\\ClassLoader.php(571): include()
+#3 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('D:\\\\Kedaireka\\\\Co...')
+#4 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\nunomaduro\\collision\\src\\Handler.php(17): Composer\\Autoload\\ClassLoader->loadClass('Whoops\\\\Handler\\\\...')
+#5 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\composer\\ClassLoader.php(571): include('D:\\\\Kedaireka\\\\Co...')
+#6 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('D:\\\\Kedaireka\\\\Co...')
+#7 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\nunomaduro\\collision\\src\\Adapters\\Laravel\\CollisionServiceProvider.php(60): Composer\\Autoload\\ClassLoader->loadClass('NunoMaduro\\\\Coll...')
+#8 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(871): NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider->NunoMaduro\\Collision\\Adapters\\Laravel\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#9 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(756): Illuminate\\Container\\Container->build(Object(Closure))
+#10 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(857): Illuminate\\Container\\Container->resolve('NunoMaduro\\\\Coll...', Array, true)
+#11 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(692): Illuminate\\Foundation\\Application->resolve('NunoMaduro\\\\Coll...', Array)
+#12 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(842): Illuminate\\Container\\Container->make('NunoMaduro\\\\Coll...', Array)
+#13 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\nunomaduro\\collision\\src\\Adapters\\Laravel\\ExceptionHandler.php(66): Illuminate\\Foundation\\Application->make('NunoMaduro\\\\Coll...')
+#14 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(379): NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler->renderForConsole(Object(Symfony\\Component\\Console\\Output\\ConsoleOutput), Object(ErrorException))
+#15 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(133): Illuminate\\Foundation\\Console\\Kernel->renderException(Object(Symfony\\Component\\Console\\Output\\ConsoleOutput), Object(ErrorException))
+#16 D:\\Kedaireka\\Coba\\coba_livewire\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 {main}
+"} 
+[2022-09-07 05:08:34] local.ERROR: Uncaught ErrorException: include(D:\Kedaireka\Coba\coba_livewire\vendor\composer/../filp/whoops/src/Whoops/Handler/Handler.php): Failed to open stream: No such file or directory in D:\Kedaireka\Coba\coba_livewire\vendor\composer\ClassLoader.php:571
+Stack trace:
+#0 D:\Kedaireka\Coba\coba_livewire\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(259): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(D:\\Keda...', 'D:\\Kedaireka\\Co...', 571)
+#1 D:\Kedaireka\Coba\coba_livewire\vendor\composer\ClassLoader.php(571): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(D:\\Keda...', 'D:\\Kedaireka\\Co...', 571)
+#2 D:\Kedaireka\Coba\coba_livewire\vendor\composer\ClassLoader.php(571): include()
+#3 D:\Kedaireka\Coba\coba_livewire\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\Kedaireka\\Co...')
+#4 D:\Kedaireka\Coba\coba_livewire\vendor\nunomaduro\collision\src\Handler.php(17): Composer\Autoload\ClassLoader->loadClass('Whoops\\Handler\\...')
+#5 D:\Kedaireka\Coba\coba_livewire\vendor\composer\ClassLoader.php(571): include('D:\\Kedaireka\\Co...')
+#6 D:\Kedaireka\Coba\coba_livewire\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\Kedaireka\\Co...')
+#7 D:\Kedaireka\Coba\coba_livewire\vendor\nunomaduro\collision\src\Adapters\Laravel\CollisionServiceProvider.php(60): Composer\Autoload\ClassLoader->loadClass('NunoMaduro\\Coll...')
+#8 D:\Kedaireka\Coba\coba_livewire\vendor\laravel\framework\src\Illuminate\Container\Container.php(871): NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider->NunoMaduro\Collision\Adapters\Laravel\{closure}(Object(Illuminate\Foundation\Application), Array)
+#9 D:\Kedaireka\Coba\coba_livewire\vendor\laravel\framework\src\Illuminate\Container\Container.php(756): Illuminate\Container\Container->build(Object(Closure))
+#10 D:\Kedaireka\Coba\coba_livewire\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(857): Illuminate\Container\Container->resolve('NunoMaduro\\Coll...', Array, true)
+#11 D:\Kedaireka\Coba\coba_livewire\vendor\laravel\framework\src\Illuminate\Container\Container.php(692): Illuminate\Foundation\Application->resolve('NunoMaduro\\Coll...', Array)
+#12 D:\Kedaireka\Coba\coba_livewire\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(842): Illuminate\Container\Container->make('NunoMaduro\\Coll...', Array)
+#13 D:\Kedaireka\Coba\coba_livewire\vendor\nunomaduro\collision\src\Adapters\Laravel\ExceptionHandler.php(66): Illuminate\Foundation\Application->make('NunoMaduro\\Coll...')
+#14 D:\Kedaireka\Coba\coba_livewire\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(211): NunoMaduro\Collision\Adapters\Laravel\ExceptionHandler->renderForConsole(Object(Symfony\Component\Console\Output\ConsoleOutput), Object(ErrorException))
+#15 D:\Kedaireka\Coba\coba_livewire\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(197): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(ErrorException))
+#16 D:\Kedaireka\Coba\coba_livewire\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(259): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#17 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(Object(ErrorException))
+#18 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught ErrorException: include(D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\composer/../filp/whoops/src/Whoops/Handler/Handler.php): Failed to open stream: No such file or directory in D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\composer\\ClassLoader.php:571
+Stack trace:
+#0 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(259): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(D:\\\\Keda...', 'D:\\\\Kedaireka\\\\Co...', 571)
+#1 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\composer\\ClassLoader.php(571): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'include(D:\\\\Keda...', 'D:\\\\Kedaireka\\\\Co...', 571)
+#2 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\composer\\ClassLoader.php(571): include()
+#3 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('D:\\\\Kedaireka\\\\Co...')
+#4 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\nunomaduro\\collision\\src\\Handler.php(17): Composer\\Autoload\\ClassLoader->loadClass('Whoops\\\\Handler\\\\...')
+#5 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\composer\\ClassLoader.php(571): include('D:\\\\Kedaireka\\\\Co...')
+#6 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('D:\\\\Kedaireka\\\\Co...')
+#7 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\nunomaduro\\collision\\src\\Adapters\\Laravel\\CollisionServiceProvider.php(60): Composer\\Autoload\\ClassLoader->loadClass('NunoMaduro\\\\Coll...')
+#8 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(871): NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider->NunoMaduro\\Collision\\Adapters\\Laravel\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#9 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(756): Illuminate\\Container\\Container->build(Object(Closure))
+#10 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(857): Illuminate\\Container\\Container->resolve('NunoMaduro\\\\Coll...', Array, true)
+#11 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(692): Illuminate\\Foundation\\Application->resolve('NunoMaduro\\\\Coll...', Array)
+#12 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(842): Illuminate\\Container\\Container->make('NunoMaduro\\\\Coll...', Array)
+#13 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\nunomaduro\\collision\\src\\Adapters\\Laravel\\ExceptionHandler.php(66): Illuminate\\Foundation\\Application->make('NunoMaduro\\\\Coll...')
+#14 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(211): NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler->renderForConsole(Object(Symfony\\Component\\Console\\Output\\ConsoleOutput), Object(ErrorException))
+#15 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(197): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->renderForConsole(Object(ErrorException))
+#16 D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(259): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(ErrorException))
+#17 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(Object(ErrorException))
+#18 {main}
+  thrown at D:\\Kedaireka\\Coba\\coba_livewire\\vendor\\composer\\ClassLoader.php:571)
+[stacktrace]
+#0 {main}
+>>>>>>> master
 "} 
