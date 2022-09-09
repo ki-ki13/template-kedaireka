@@ -1,5 +1,9 @@
 
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
   <div class="d-flex">
     
     <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
@@ -55,6 +59,9 @@
     </div>  
 </div>
 
+<<<<<<< HEAD
+
+=======
 <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
 <?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'components.script','data' => []] + (isset($attributes) ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('script'); ?>
@@ -69,4 +76,5 @@
 <?php $component = $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4; ?>
 <?php unset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4); ?>
 <?php endif; ?>
+>>>>>>> master
 <?php /**PATH D:\Kedaireka\Coba\coba_livewire\resources\views/layouts/main.blade.php ENDPATH**/ ?>
