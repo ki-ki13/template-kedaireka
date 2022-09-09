@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('/produksi', function () {
     return view('produksi.index');
 }) -> name('produksi');
+
+Route::get('/pengiriman', function () {
+    return view('pengiriman.index');
+}) -> name('pengiriman');
+
+Route::get('/rekap_subkon', function () {
+    return view('rekapsubkon.index');
+}) -> name('rekap_subkon');

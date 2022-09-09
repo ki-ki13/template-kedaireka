@@ -48,7 +48,7 @@
         <th  scope="col" >
           <span>
             No FPPP
-            <i wire:click="sortBy('fppp_no')" style="cursor: pointer" class="material-icons-round {{ $sortBy === 'fppp_no' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
+            <i wire:click="sortBy('fppps->fppp_no')" style="cursor: pointer" class="material-icons-round {{ $sortBy === 'fppp_no' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
           </span> 
         </th>
         <th  scope="col" >
@@ -63,7 +63,26 @@
             <i wire:click="sortBy('project_name')" style="cursor: pointer" class="material-icons-round {{ $sortBy === 'project_name' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
           </span>
         </th>
+        <th  scope="col">
+            <span>
+              Kota
+              <i wire:click="sortBy('tujuan')" style="cursor: pointer" class="material-icons-round {{ $sortBy === 'tujuan' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
+            </span>
+        </th>
+        {{-- <th  scope="col">
+            <span>
+              Item Jadi
+              <i wire:click="sortBy('project_name')" style="cursor: pointer" class="material-icons-round {{ $sortBy === 'project_name' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
+            </span>
+        </th>
+        <th  scope="col">
+            <span>
+              Total Item
+              <i wire:click="sortBy('project_name')" style="cursor: pointer" class="material-icons-round {{ $sortBy === 'project_name' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
+            </span>
+        </th> --}}
         <th scope="col">Status</th>
+        <th scope="col">Aksi</th>
       </tr>
     
       {{-- Search filter --}}
@@ -131,12 +150,16 @@
               <tr class="items-align-center">
                 <th scope="row">{{ $items->firstItem() + $d}}</th>
                 <td>{{ $item -> date_for_humans }}</td>
-                <td>{{ $item -> quotation_no }}</td>
-                <td>{{ $item -> fppp_no }}</td>
-                <td>{{ $item -> applicator_name }}</td>
-                <td>{{ $item -> project_name }}</td>
+                <td>{{ $item -> fppps -> quotation_no }}</td>
+                <td>{{ $item -> fppps -> fppp_no }}</td>
+                <td>{{ $item -> fppps -> applicator_name }}</td>
+                <td>{{ $item -> fppps -> project_name }}</td>
+                <td>{{ $item -> tujuan }}</td>
                 <td class="p-4 text-center">
-                  <button class="status  p-2 btn btn-outline-light" style="background-color: {{ $item -> status_color }}; color:{{ $item-> status_text_color }}">{{ $item -> acc_produksi }}</button>
+                  <span class="status  p-2 rounded" style="background-color: {{ $item -> status_color }}; color:{{ $item-> status_text_color }}">{{ $item -> acc_pengiriman }}</span>
+                </td>
+                <td>
+                    <a href="/detailPengiriman" class="aksi-btn btn py-2 px-4 text-white">Lihat</a>
                 </td>
               </tr>
       @endforeach
@@ -149,4 +172,5 @@
 </div>
 </div>
 @endsection
+
 

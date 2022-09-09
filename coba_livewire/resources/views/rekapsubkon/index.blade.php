@@ -1,5 +1,5 @@
 <x-style></x-style>
-    @livewire('table-produksi')
+    @livewire('rekap-subkon')
     
 <x-script></x-script>>
     

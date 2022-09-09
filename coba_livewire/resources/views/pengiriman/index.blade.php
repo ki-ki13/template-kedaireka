@@ -1,4 +1,4 @@
 <x-style></x-style>
-    @livewire('dashboard')
+    @livewire('table-pengiriman')
 <x-script></x-script>
     

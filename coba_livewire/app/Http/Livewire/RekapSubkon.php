@@ -3,13 +3,10 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use App\Models\Produksi;
-use Schema;
+use App\Models\Resub;
 
-
-class TableProduksi extends Component
+class RekapSubkon extends Component
 {
-
     public $sortBy = 'created_at';
     public $sortDirection = 'desc';
     public $selectedStatus ='';
@@ -28,19 +25,15 @@ class TableProduksi extends Component
     public function render()
     {
         $columns = ['Kode Barang','Nama Barang'];
-        $status = Produksi::groupBy('acc_produksi')
-                    ->pluck('acc_produksi');
-        $items = Produksi::query()
-                    ->where('order_status',"=", 1)
+        $items = Resub::query()
                     ->orderBy($this->sortBy, $this->sortDirection)
                     ->paginate();
                     
-        return view('livewire.table-produksi',[
-            'title' => 'Produksi',
+        return view('livewire.rekap-subkon',[
+            'title' => 'Tagihan Subcon',
             'ket' => 'Tabel ',
             'items' => $items,
-            'status' => $status,
-            'icon' => 'precision_manufacturing',
+            'icon' => 'groups',
             'columns'=>$columns
         ]);
     }

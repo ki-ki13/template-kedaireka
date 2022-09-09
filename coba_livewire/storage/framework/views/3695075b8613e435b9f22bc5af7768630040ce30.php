@@ -6,5 +6,7 @@
   });
 
 </script>
+<?php echo \Livewire\Livewire::scripts(); ?>
+
 </body>
 </html><?php /**PATH D:\Kedaireka\Coba\coba_livewire\resources\views/components/script.blade.php ENDPATH**/ ?>

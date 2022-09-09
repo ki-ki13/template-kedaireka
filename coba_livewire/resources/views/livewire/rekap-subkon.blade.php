@@ -10,7 +10,7 @@
         {{ $ket }}{{ $title }} 
       </h5>
 
-      <div class="row my-4">
+      <div class="row my-4 justify-content-between">
         <span class="my-2 mx-2 fs-7" style="color: #5C5858"> 
           Cari Berdasarkan
         </span>
@@ -26,36 +26,40 @@
                 <input class="form-control" style="width:10rem" id="exampleInputEmail1" aria-describedby="emailHelp" name="search" placeholder="search..">
               </div>
         </div>
-      </div>
+        <div class="col-4 float-end">
+            <button class="btn aksi-btn text-white mx-2">Pilih Semua</button>
+            <button class="btn aksi-btn2 mx-2 text-white">Approve Tagihan</button>
+        </div>
+        
 
 <table class="table">
   {{-- table heading --}}
     <thead>
       <tr class="text-center">
-        <th scope="col">No</th>
+        <th scope="col">Pilih</th>
         <th scope="col" >
           <span>
-            Tanggal
-            <i wire:click="sortBy('created_at')" style="cursor: pointer" class="material-icons-round {{ $sortBy === 'created_at' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
+            Tanggal Pengerjaan
+            <i wire:click="sortBy('tgl_terima_fppp')" style="cursor: pointer" class="material-icons-round {{ $sortBy === 'tgl_terima_fppp' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
           </span> 
         </th> 
         <th  scope="col" >
           <span>
-            No Quotation
-            <i wire:click="sortBy('quotation_no')" style="cursor: pointer" class="material-icons-round {{ $sortBy === 'quotation_no' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
+            Tanggal Tagih
+            <i wire:click="sortBy('tgl_tagih')" style="cursor: pointer" class="material-icons-round {{ $sortBy === 'tgl_tagih' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
           </span> 
-        </th>               
+        </th>   
+        <th  scope="col" >
+            <span>
+              Jenis Pekerjaan
+              <i wire:click="sortBy('')" style="cursor: pointer" class="material-icons-round {{ $sortBy === '' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
+            </span> 
+          </th>             
         <th  scope="col" >
           <span>
             No FPPP
-            <i wire:click="sortBy('fppp_no')" style="cursor: pointer" class="material-icons-round {{ $sortBy === 'fppp_no' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
+            <i wire:click="sortBy('')" style="cursor: pointer" class="material-icons-round {{ $sortBy === '' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
           </span> 
-        </th>
-        <th  scope="col" >
-          <span>
-            Aplikator
-            <i wire:click="sortBy('applicator_name')" style="cursor: pointer" class="material-icons-round {{ $sortBy === 'applicator_name' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
-          </span>
         </th>
         <th  scope="col">
           <span>
@@ -63,7 +67,42 @@
             <i wire:click="sortBy('project_name')" style="cursor: pointer" class="material-icons-round {{ $sortBy === 'project_name' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
           </span>
         </th>
-        <th scope="col">Status</th>
+        <th  scope="col">
+            <span>
+              Tipe Barang
+              <i wire:click="sortBy('tipe_barang')" style="cursor: pointer" class="material-icons-round {{ $sortBy === 'tipe_barang' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
+            </span>
+        </th>
+        <th  scope="col">
+            <span>
+              Warna
+              <i wire:click="sortBy('')" style="cursor: pointer" class="material-icons-round {{ $sortBy === '' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
+            </span>
+        </th>
+        <th  scope="col">
+            <span>
+              Kode Unit
+              <i wire:click="sortBy('kode_unit')" style="cursor: pointer" class="material-icons-round {{ $sortBy === 'kode_unit' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
+            </span>
+        </th>
+        <th  scope="col">
+            <span>
+              Jumlah Daun
+              <i wire:click="sortBy('')" style="cursor: pointer" class="material-icons-round {{ $sortBy === '' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
+            </span>
+        </th>
+        <th  scope="col">
+            <span>
+              Harga Jasa
+              <i wire:click="sortBy('')" style="cursor: pointer" class="material-icons-round {{ $sortBy === '' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
+            </span>
+        </th>
+        <th  scope="col">
+            <span>
+                Total Biaya
+              <i wire:click="sortBy('')" style="cursor: pointer" class="material-icons-round {{ $sortBy === '' && $sortDirection === 'desc' ? '' : 'no-use' }}">arrow_drop_down</i>
+            </span>
+        </th>
       </tr>
     
       {{-- Search filter --}}
@@ -129,15 +168,20 @@
     <tbody>
       @foreach ($items as $d=>$item)
               <tr class="items-align-center">
-                <th scope="row">{{ $items->firstItem() + $d}}</th>
-                <td>{{ $item -> date_for_humans }}</td>
-                <td>{{ $item -> quotation_no }}</td>
-                <td>{{ $item -> fppp_no }}</td>
-                <td>{{ $item -> applicator_name }}</td>
-                <td>{{ $item -> project_name }}</td>
-                <td class="p-4 text-center">
-                  <button class="status  p-2 btn btn-outline-light" style="background-color: {{ $item -> status_color }}; color:{{ $item-> status_text_color }}">{{ $item -> acc_produksi }}</button>
-                </td>
+                <th scope="row">
+                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">             
+                </th>
+                <td>{{ $item -> tgl_terima_fppp }}</td>
+                <td>{{ $item -> tgl_tagih }}</td>
+                <td>jenis pekerjaan</td>
+                <td>{{ $item -> fppps -> fppp_no }}</td>
+                <td>{{ $item -> fppps -> project_name }}</td>
+                <td>{{ $item -> tipe_barang }}</td>
+                <td>warna</td>
+                <td>{{ $item -> kode_unit }}</td>
+                <td>jumlah daun</td>
+                <td>harga jasa</td>
+                <td>total biaya</td>
               </tr>
       @endforeach
     </tbody>
@@ -149,4 +193,5 @@
 </div>
 </div>
 @endsection
+
 

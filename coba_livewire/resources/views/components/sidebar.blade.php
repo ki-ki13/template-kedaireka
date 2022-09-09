@@ -25,7 +25,7 @@
             </a>
           </li>
           <li>
-            <a href="/rekap-subkon" class="d-flex nav-link p-3 align-items-center">
+            <a href="/rekap_subkon" class="d-flex nav-link p-3 align-items-center {{ Route::is('rekap_subkon') ? 'active' : '' }}"">
               <i class="material-icons-round bi me-4">groups</i>
               <span class="text">Rekap Subkon</span>
             </a>
