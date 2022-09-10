@@ -27,25 +27,13 @@ class TableProduksi extends Component
 
     public function render()
     {
-<<<<<<< HEAD
         $columns = ['Kode Barang','Nama Barang'];
         $status = Produksi::groupBy('acc_produksi')
                     ->pluck('acc_produksi');
         $items = Produksi::query()
                     ->where('order_status',"=", 1)
-=======
-        $status = Item::groupBy('status')
-                    ->pluck('status');
-        $items = Item::query()
-                    // ->when($this->searchColumnsKode != "", function($q){
-                    //     return $q->where('kode_barang', 'like', '%'.$this->searchColumnsKode.'%');})
-                    // ->when($this->searchColumnsNama != "", function($q){
-                    //     return $q->where('nama_barang', 'like', '%'.$this->searchColumnsNama.'%');})
-                    ->selectRaw('*, stock * harga as total_aset')
->>>>>>> master
                     ->orderBy($this->sortBy, $this->sortDirection)
                     ->paginate();
-
         return view('livewire.table-produksi',[
             'title' => 'Produksi',
             'ket' => 'Tabel ',
@@ -56,3 +44,8 @@ class TableProduksi extends Component
         ]);
     }
 }
+
+// ->when($this->searchColumnsKode != "", function($q){
+//     return $q->where('kode_barang', 'like', '%'.$this->searchColumnsKode.'%');})
+// ->when($this->searchColumnsNama != "", function($q){
+//     return $q->where('nama_barang', 'like', '%'.$this->searchColumnsNama.'%');})
