@@ -27,8 +27,8 @@
               </div>
         </div>
         <div class="col-4 float-end">
-            <button class="btn aksi-btn text-white mx-2">Pilih Semua</button>
-            <button class="btn aksi-btn2 mx-2 text-white">Approve Tagihan</button>
+            <button class="btn aksi-btn text-white mx-2 float-end">Pilih Semua</button>
+            <button class="btn aksi-btn2 mx-2 text-white float-end">Approve Tagihan</button>
         </div>
         
 

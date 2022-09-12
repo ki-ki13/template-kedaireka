@@ -11,7 +11,6 @@
         {{ $ket }}{{ $title }} 
       </h5>
 
-<<<<<<< HEAD
       <div class="row my-4">
         <span class="my-2 mx-2 fs-7" style="color: #5C5858"> 
           Cari Berdasarkan
@@ -29,8 +28,6 @@
               </div>
         </div>
       </div>
-=======
->>>>>>> master
 
 <table class="table">
   {{-- table heading --}}

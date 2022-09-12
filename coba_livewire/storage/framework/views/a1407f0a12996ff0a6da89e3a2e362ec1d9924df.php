@@ -15,15 +15,15 @@
     <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('rekap-subkon')->html();
-} elseif ($_instance->childHasBeenRendered('NI23NIe')) {
-    $componentId = $_instance->getRenderedChildComponentId('NI23NIe');
-    $componentTag = $_instance->getRenderedChildComponentTagName('NI23NIe');
+} elseif ($_instance->childHasBeenRendered('HddSE3l')) {
+    $componentId = $_instance->getRenderedChildComponentId('HddSE3l');
+    $componentTag = $_instance->getRenderedChildComponentTagName('HddSE3l');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('NI23NIe');
+    $_instance->preserveRenderedChild('HddSE3l');
 } else {
     $response = \Livewire\Livewire::mount('rekap-subkon');
     $html = $response->html();
-    $_instance->logRenderedChild('NI23NIe', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('HddSE3l', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
