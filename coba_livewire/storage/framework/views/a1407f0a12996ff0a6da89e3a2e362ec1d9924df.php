@@ -15,15 +15,15 @@
     <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('rekap-subkon')->html();
-} elseif ($_instance->childHasBeenRendered('HddSE3l')) {
-    $componentId = $_instance->getRenderedChildComponentId('HddSE3l');
-    $componentTag = $_instance->getRenderedChildComponentTagName('HddSE3l');
+} elseif ($_instance->childHasBeenRendered('gNxplWe')) {
+    $componentId = $_instance->getRenderedChildComponentId('gNxplWe');
+    $componentTag = $_instance->getRenderedChildComponentTagName('gNxplWe');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('HddSE3l');
+    $_instance->preserveRenderedChild('gNxplWe');
 } else {
     $response = \Livewire\Livewire::mount('rekap-subkon');
     $html = $response->html();
-    $_instance->logRenderedChild('HddSE3l', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('gNxplWe', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -41,6 +41,6 @@ echo $html;
 <?php if (isset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4)): ?>
 <?php $component = $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4; ?>
 <?php unset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4); ?>
-<?php endif; ?>>
+<?php endif; ?>
     
 <?php /**PATH D:\Kedaireka\Coba\coba_livewire\resources\views/rekapsubkon/index.blade.php ENDPATH**/ ?>
