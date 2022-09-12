@@ -3,7 +3,9 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Database\Seeders\WoSeeder;
 use Illuminate\Database\Seeder;
+use Database\Seeders\FpppSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,11 +16,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        $this->call([
+            FpppSeeder::class,
+            WoSeeder::class,
+        ]);
     }
 }

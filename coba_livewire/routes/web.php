@@ -25,6 +25,10 @@ Route::get('/pengiriman', function () {
     return view('pengiriman.index');
 }) -> name('pengiriman');
 
+Route::get('/detailPengiriman', function () {
+    return view('pengiriman.edit');
+}) -> name('pengiriman.edit');
+
 Route::get('/rekap_subkon', function () {
     return view('rekapsubkon.index');
 }) -> name('rekap_subkon');

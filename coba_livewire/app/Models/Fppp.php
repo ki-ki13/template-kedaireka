@@ -13,4 +13,9 @@ class Fppp extends Model
     public function wos(){
         return $this -> hasMany(Wo::class);
     }
+
+    public function quotations()
+    {
+        return $this->belongsTo(Quotation::class,"quotation_no");
+    }
 }
