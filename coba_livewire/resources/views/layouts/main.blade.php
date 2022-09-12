@@ -1,5 +1,6 @@
 
 
+
   <div class="d-flex">
     
     <x-sidebar></x-sidebar>
@@ -16,4 +17,4 @@
     </div>  
 </div>
 
-<x-script></x-script>
+

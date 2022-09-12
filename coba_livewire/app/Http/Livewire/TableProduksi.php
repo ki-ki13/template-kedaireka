@@ -3,7 +3,8 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use App\Models\Item;
+use App\Models\Produksi;
+use Schema;
 
 
 class TableProduksi extends Component
@@ -26,6 +27,13 @@ class TableProduksi extends Component
 
     public function render()
     {
+<<<<<<< HEAD
+        $columns = ['Kode Barang','Nama Barang'];
+        $status = Produksi::groupBy('acc_produksi')
+                    ->pluck('acc_produksi');
+        $items = Produksi::query()
+                    ->where('order_status',"=", 1)
+=======
         $status = Item::groupBy('status')
                     ->pluck('status');
         $items = Item::query()
@@ -34,6 +42,7 @@ class TableProduksi extends Component
                     // ->when($this->searchColumnsNama != "", function($q){
                     //     return $q->where('nama_barang', 'like', '%'.$this->searchColumnsNama.'%');})
                     ->selectRaw('*, stock * harga as total_aset')
+>>>>>>> master
                     ->orderBy($this->sortBy, $this->sortDirection)
                     ->paginate();
 
@@ -42,7 +51,8 @@ class TableProduksi extends Component
             'ket' => 'Tabel ',
             'items' => $items,
             'status' => $status,
-            'icon' => 'precision_manufacturing'
+            'icon' => 'precision_manufacturing',
+            'columns'=>$columns
         ]);
     }
 }

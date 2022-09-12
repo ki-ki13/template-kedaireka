@@ -10,10 +10,8 @@ class Dashboard extends Component
 {
     public function render()
     {
-        return view('livewire.table-produksi',[
+        return view('livewire.dashboard',[
             'title' => 'Dashboard',
-            'ket' => 'Tabel ',
-            'icon' => 'precision_manufacturing'
         ]);
     }
 }

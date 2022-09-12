@@ -4,4 +4,4 @@
         <span class="text-muted">&copy; 2022 Allure Alumunio, Unnes</span>
       </div>
     </footer>
-  </div>
+</div>

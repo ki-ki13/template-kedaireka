@@ -1,3 +1,0 @@
-<div>
-    Coba {{ $data }}
-</div>
