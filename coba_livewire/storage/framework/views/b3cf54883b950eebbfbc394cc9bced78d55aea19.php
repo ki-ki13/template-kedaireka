@@ -15,7 +15,7 @@
 
 <?php $__env->startSection('container'); ?>
 
-<div class="container-fluid flex-grow-1">
+<div class="container flex-grow-1">
 <h3 class="my-4 judul"> Dashboard </h3>
 <div class="card border-light mb-3 p-5">
 <h4 class="text-dark">Selamat Datang, Sulistyo A ! </h4>
@@ -32,9 +32,9 @@
 </div>
 </div>
 <h5 class="text-blue p-3">Produksi</h5>
-<div class="container-fluid">
+<div class="container g-6 ">
 <div class="row">
-<div class="col-lg-3 col-6 ml-10 ">
+<div class="col-lg-3 col-6 ">
 <div class="card border-light">
 <div class="inner">
 <div class="mb-4 mx-2 card-blue text-decoration-none rounded-2">
