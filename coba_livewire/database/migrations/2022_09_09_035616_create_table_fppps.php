@@ -15,19 +15,19 @@ return new class extends Migration
     {
         Schema::create('fppps', function (Blueprint $table) {
             $table->id();
-            $table->string('fppp_no')->nullable;
-            $table->unsignedBigInteger('fppp_type')->nullable;
-            $table->string('production_phase')->nullable;
-            $table->unsignedBigInteger('quotation_no')->nullable;
-            $table->string('applicator_name')->nullable;
-            $table->string('project_name')->nullable;
-            $table->string('project_address')->nullable;
-            $table->string('sales_name')->nullable;
-            $table->unsignedBigInteger('order_status')->nullable;
-            $table->string('production_time')->nullable;
-            $table->string('color')->nullable;
-            $table->unsignedBigInteger('glass')->nullable;
-            $table->string('glass_type')->nullable;
+            $table->string('fppp_no')->nullable();
+            $table->unsignedBigInteger('fppp_type')->nullable();
+            $table->string('production_phase')->nullable();
+            $table->unsignedBigInteger('quotation_no')->nullable();
+            $table->string('applicator_name')->nullable();
+            $table->string('project_name')->nullable();
+            $table->string('project_address')->nullable();
+            $table->string('sales_name')->nullable();
+            $table->unsignedBigInteger('order_status')->nullable();
+            $table->string('production_time')->nullable();
+            $table->string('color')->nullable();
+            $table->unsignedBigInteger('glass')->nullable();
+            $table->string('glass_type')->nullable();
             $table->boolean('acc_produksi')->default('0');
             $table->timestamps();
         });
